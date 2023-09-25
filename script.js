@@ -10,8 +10,9 @@ const logItems = function (array) {
 const calculateEngravingPrice = function (message, pricePerWord) {
 	let newMessage = message.split(' ').length;
 
-	alert(`Ціна: ${pricePerWord * +newMessage}`);
+	return `Ціна: ${pricePerWord * +newMessage}`;
 };
+
 
 //3
 let LongestWord = '';
@@ -25,6 +26,8 @@ const findLongestWord = function (string) {
 			LongestWord = newArray[i];
 		}
 	}
+
+	return LongestWord;
 };
 
 //4
